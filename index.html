@@ -42,17 +42,18 @@
 			<label for="slide3"></label>
 		</div>
 	</div>
-	<section class="promo-block raspberry">
-		<h2>Малинка даром!</h2>
-		<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-		<a href="catalog.html" class="promo-link btn">Хочу варенье!</a>
+	<section class="promo-block">
+		<div class="promo-block-item raspberry">
+			<h2>Малинка даром!</h2>
+			<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			<a href="catalog.html" class="promo-link btn">Хочу варенье!</a>
+		</div>
+		<div class="promo-block-item chocolate">
+			<h2>Шоколадки даром!</h2>
+			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадкой присыпки совершенно бесплатно.</p>
+			<a href="catalog.html" class="promo-link btn">Хочу шоколадки!</a>
+		</div>
 	</section>
-	<section class="promo-block chocolate">
-		<h2>Шоколадки даром!</h2>
-		<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадкой присыпки совершенно бесплатно.</p>
-		<a href="catalog.html" class="promo-link btn">Хочу шоколадки!</a>
-	</section>
-
 	<section class="catalog">
 		<h2 class="visually-hidden">Популярное мороженое</h2>
 		<ul class="catalog-list">
@@ -66,27 +67,27 @@
 					<b>310 &#8381;</b><b>/кг</b>
 				</p>
 				<h3>
-				<a href="catalog-item.html">
-					<span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-				</a>
+					<a href="catalog-item.html">
+						<span class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+					</a>
 				</h3>
 				<a href="" class="catalog-btn">Быстрый просмотр</a>
 			</li>
 			<li class="catalog-item">
-			<p class="catalog-item-image">
-				<a href="catalog-item.html">
-					<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-				</a>
-			</p>
-			<p class="catalog-item-price">
-				<b>380 &#8381;</b><b>/кг</b>
-			</p>
-			<h3>
-				<a href="catalog-item.html">
-					<span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
-				</a>
-			</h3>
-			<a href="" class="catalog-btn">Быстрый просмотр</a>
+				<p class="catalog-item-image">
+					<a href="catalog-item.html">
+						<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+					</a>
+				</p>
+				<p class="catalog-item-price">
+					<b>380 &#8381;</b><b>/кг</b>
+				</p>
+				<h3>
+					<a href="catalog-item.html">
+						<span class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</span>
+					</a>
+				</h3>
+				<a href="" class="catalog-btn">Быстрый просмотр</a>
 			</li>
 			<li class="catalog-item">
 				<p class="catalog-item-image">
@@ -124,7 +125,8 @@
 	</section>
 
 	<section class="features">
-		<h2 class="visually-hidden">Наши преимущества</h2>
+		<h2 class="visually-hidden">О нас</h2>
+		<h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
 		<ul class="features-list">
 			<li class="feature-item">
 				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -140,41 +142,43 @@
 			</li>
 		</ul>
 	</section>
-	<article class="blog-news">
-		<h2 class=visually-hidden>Новости блога</h2>
-		<p>Новое в нашем блоге</p>
-		<h2><a href="">10 способов сервировки фруктовых щербетов к столу</a></h2>
-	</article>
-	<section class="subscribe">
-		<h2 class=visually-hidden>Подпишитесь на нас</h2>
-		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-		<form action="#" method="get">
-			<input type="email" placeholder="Электронная почта">
-			<input type="submit" value="Отправить">
-		</form>
+	<section class="blog-subscribe-block">
+		<article class="blog-news">
+			<h2 class=visually-hidden>Новости блога</h2>
+			<p>Новое в нашем блоге</p>
+			<h2><a href="">10 способов сервировки фруктовых щербетов к столу</a></h2>
+		</article>
+		<section class="subscribe">
+			<h2 class=visually-hidden>Подпишитесь на нас</h2>
+			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+			<form action="#" method="get">
+				<input type="email" placeholder="Электронная почта">
+				<input type="submit" value="Отправить">
+			</form>
+		</section>
 	</section>
 	<div class="map">
-			<!--тут будет карта-->
+			<!--тут будет карта-->	
+		<div class="map-contacts-information">
+			<h2 class=visually-hidden>Наши контакты</h2>
+			<p>Адрес главного офиса и офлайн магазина:</p>
+			<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+			<p>Для заказа по телефону:</p>
+			<b>8 812 450-25-25</b>
+			<p>(с 10 до 20 ежедневно)</p>
+			<a class="pop-up btn">Форма обратной связи</a>
+		</div>
 	</div>
-	<section class="map-contacts-information">
-		<h2 class=visually-hidden>Наши контакты</h2>
-		<p>Адрес главного офиса и офлайн магазина:</p>
-		<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-		<p>Для заказа по телефону:</p>
-		<b>8 812 450-25-25</b>
-		<p>(с 10 до 20 ежедневно)</p>
-		<a class="pop-up btn">Форма обратной связи</a>
-	</section>
 </main>
 <footer class="main-footer">
-	<section class="footer-social">
+	<div class="footer-social">
 		<ul>
 			<li><a class="social-button twitter" href="#"><img src=""/>Твиттер</a></li>
 			<li><a class="social-button instagram" href="#"><img src=""/>Инстаграм</a></li>
 			<li><a class="social-button facebook" href="#"><img src=""/>Фейсбук</a></li>
 			<li><a class="social-button vkontakte" href="#"><img src=""/>Вконтакте</a></li>
 		</ul>
-	</section>
+	</div>
 	<nav class="footer-navigation" >
 		<ul>
 			<li><a href="#">Для поставщиков</a></li>
@@ -183,10 +187,10 @@
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
 	</nav>
-	<section class="copyright">
+	<div class="copyright">
 		<a class="htmlacademy-logo"><img src=""></a>
 		<p>Сделано в <a href="">HTML Academy</a> © 2017</p>
-	</section>
+	</div>
 </footer>
 
 <!-- Всплывающие блоки -->
