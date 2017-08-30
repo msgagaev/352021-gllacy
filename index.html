@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -15,11 +16,11 @@
 			<li><a href="">Доставка и оплата</a></li>
 			<li><a href="">О компании</a></li>
 		</ul>
-		<ul class="user-navigation">
-			<li class="search">Поиск</li>
-			<li class="login-link">Вход</li>
-			<li class="cart">Пусто</li>
-		</ul>
+    <div class="user-navigation">
+      <button class="search">Поиск</button>
+      <button class="login-link">Вход</button>
+      <button class="cart cart-active">2 товара</button>
+    </div>
 		<section class="header-contacts">
 			<p class="worktime">С 10 до 20, ежедневно</p>
 			<p class="phone-number">8 812 450 25-25</p>
@@ -27,14 +28,23 @@
 	</nav>
 </header>
 <main class="main-content">
-	<div class="slider-container">
+  <div class="slider-container">
 		<input type="radio" name="point" id="slide1" checked>
 		<input type="radio" name="point" id="slide2">
 		<input type="radio" name="point" id="slide3">
 		<div class="slider">
-			<div class="slides slide1"></div>
-			<div class="slides slide2"></div>
-			<div class="slides slide3"></div>
+			<div class="slides slide1">
+        <h1 class="headline">Крем-боюле и пломбир с малиновым джемом</h1>
+        <img src="img/icecream-1.png" width="1045" height="881">
+      </div>
+			<!--<div class="slides slide2">
+			  <h1 class="headline">Шоколадный пломбир и лимонный сорет</h1>
+			  <img src="img/icecream-2.png" width="1065" height="859">
+			  </div>-->
+			<!--<div class="slides slide3">
+			  <h1 class="headline">Пломбир с помадкой и клубничный щербет</h1>
+			  <img src="img/icecream-3.png" width="1079" height="854">
+			  </div>-->
 		</div>
 		<div class="controls">
 			<label for="slide1"></label>
@@ -60,7 +70,7 @@
 			<li class="catalog-item">
 				<p class="catalog-item-image">
 					<a href="catalog-item.html">
-						<img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+						<img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</a>
 				</p>
 				<p class="catalog-item-price">
@@ -76,7 +86,7 @@
 			<li class="catalog-item">
 				<p class="catalog-item-image">
 					<a href="catalog-item.html">
-						<img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+						<img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					</a>
 				</p>
 				<p class="catalog-item-price">
@@ -92,7 +102,7 @@
 			<li class="catalog-item">
 				<p class="catalog-item-image">
 					<a href="catalog-item.html">
-						<img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+						<img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					</a>
 				</p>
 				<p class="catalog-item-price">
@@ -108,7 +118,7 @@
 			<li class="catalog-item">
 				<p class="catalog-item-image">
 					<a href="catalog-item.html">
-						<img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+						<img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					</a>
 				</p>
 				<p class="catalog-item-price">
@@ -158,7 +168,7 @@
 		</section>
 	</section>
 	<div class="map">
-			<!--тут будет карта-->	
+			<!--тут будет карта-->
 		<div class="map-contacts-information">
 			<h2 class=visually-hidden>Наши контакты</h2>
 			<p>Адрес главного офиса и офлайн магазина:</p>
@@ -173,10 +183,10 @@
 <footer class="main-footer">
 	<div class="footer-social">
 		<ul>
-			<li><a class="social-button twitter" href="#"><img src=""/>Твиттер</a></li>
-			<li><a class="social-button instagram" href="#"><img src=""/>Инстаграм</a></li>
-			<li><a class="social-button facebook" href="#"><img src=""/>Фейсбук</a></li>
-			<li><a class="social-button vkontakte" href="#"><img src=""/>Вконтакте</a></li>
+			<li><a class="social-button twitter" href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+			<li><a class="social-button instagram" href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+			<li><a class="social-button facebook" href="#"><img src="img/fb.svg" alt="facebook"></a></li>
+			<li><a class="social-button vkontakte" href="#"><img src="img/vk.svg" alt="vkontakte"></a></li>
 		</ul>
 	</div>
 	<nav class="footer-navigation" >
@@ -188,7 +198,7 @@
 		</ul>
 	</nav>
 	<div class="copyright">
-		<a class="htmlacademy-logo"><img src=""></a>
+		<a class="htmlacademy-logo" href=""><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
 		<p>Сделано в <a href="">HTML Academy</a> © 2017</p>
 	</div>
 </footer>
